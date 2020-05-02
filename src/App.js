@@ -1,10 +1,12 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.css';
 
-import TodoList from './todo/list/TodoList';
-import TodoForm from './todo/form/TodoForm';
-import Counter from './counter/Counter';
+import TodoList from './components/todo/list/TodoList';
+import TodoForm from './components/todo/form/TodoForm';
+import Counter from './components/counter/Counter';
+
+import 'bootstrap/dist/js/bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 export default class App extends React.Component {
 	constructor() {

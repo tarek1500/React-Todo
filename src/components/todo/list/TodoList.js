@@ -1,7 +1,8 @@
 import React from 'react';
-import './TodoList.css';
 
 import TodoItem from '../item/TodoItem';
+
+import './TodoList.css';
 
 export default class TodoList extends React.Component {
 	doItem = (index) => this.props.doItem(index);
