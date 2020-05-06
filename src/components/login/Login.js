@@ -50,6 +50,9 @@ export default class Login extends React.Component
 					isBusy: false,
 					message: ('user' in response ? 'Success: ' : 'Error: ') + response.message
 				});
+
+				if ('user' in response)
+					this.props.changeLoginFlag(true, response.user.token);
 			});
 		}
 		else {
